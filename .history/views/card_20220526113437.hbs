@@ -1,0 +1,15 @@
+<h1>корзина</h1>
+{{#if courses.lenght}}
+{{#each courses}}
+<table>
+    <thead>
+        <tr>
+            <th>название</th>
+            <th>количество</th>
+             <th>действия</th>
+        </tr>
+    </thead>
+</table>
+{{else}}
+<p>корзина пустая</p>
+{{/if}}

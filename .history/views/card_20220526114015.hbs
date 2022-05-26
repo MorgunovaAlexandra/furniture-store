@@ -1,0 +1,24 @@
+<h1>корзина</h1>
+
+ <img src={{img}} alt="картинка"/>
+<table>
+    <thead>
+        <tr>
+            <th>картинка</th>
+            <th>название</th>
+            <th>количество</th>
+             <th>действия</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {{#each courses}}
+        <tr>
+            <img src={{img}}/>
+            <td>{{name}}</td>
+            <td>{{count}}</td>
+            <td><button>удалить</button></td>
+        </tr>
+    </tbody>
+    {{/each}}
+</table>

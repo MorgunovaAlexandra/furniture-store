@@ -1,0 +1,35 @@
+
+
+{{#if courses.length}}
+
+<div class="row">
+    {{#each courses}}
+    
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src={{img}}>
+          
+        </div>
+        <div class="card-content">
+          <p>{{price}}</p>
+          <span class="card-title">{{name}}</span>
+        </div>
+       <div class="card-action">
+          <a href="/kurs/{{id}}" target="_blank">получить курс</a>
+           <a href="/kurs/{{id}}/edit?allow=true">Редактировать</a>
+           <form>
+             <button ac>добавить в корзину</button>
+           </form>
+        </div>
+      </div>
+    </div>
+    
+    {{/each}}
+     
+  </div>
+
+
+{{else}}
+<h1>Курсов нет </h1>
+{{/if}}

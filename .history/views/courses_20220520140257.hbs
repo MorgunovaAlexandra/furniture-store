@@ -1,0 +1,25 @@
+
+{{#if courses.length}}
+{{#each courses}}
+<div class="kurs-flex">
+    <div class="flex">
+      <div class="card">
+        <div class="card-image">
+          <img src={{img}}>
+          <span class="card-title">{{name}}</span>
+        </div>
+        <div class="card-content">
+          <p>{{price}}</p>
+        </div>
+        <div class="card-action">
+          <a href="/">добавить курсы</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+{{/each}}
+
+{{else}}
+<h1>Курсов нет </h1>
+{{/if}}

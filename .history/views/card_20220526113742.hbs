@@ -1,0 +1,23 @@
+<h1>корзина</h1>
+
+
+<table>
+    <thead>
+        <tr>
+            
+            <th>название</th>
+            <th>количество</th>
+             <th>действия</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {{#each courses}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{count}}</td>
+            <td><button>удалить</button></td>
+        </tr>
+    </tbody>
+    {{/each}}
+</table>

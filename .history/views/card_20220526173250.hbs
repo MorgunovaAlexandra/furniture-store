@@ -1,0 +1,29 @@
+<h1>корзина</h1>
+
+ <div id="card">
+<table>
+    <thead>
+        <tr>
+            <th>картинка</th>
+            <th>название</th>
+            <th>количество</th>
+             <th>действия</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {{#each courses}}
+        <tr>
+            <td><img class="img_card" src={{img}} alt="ds"/></td>
+            <td>{{name}}</td>
+            <td>{{count}}</td>
+            <td><button class="js-remove" data-id="{{id}}">удалить</button></td>
+               
+          
+        </tr>
+    </tbody>
+    
+    {{/each}}
+</table>
+<p><h1> {{price}}$</h1></p>
+</div>

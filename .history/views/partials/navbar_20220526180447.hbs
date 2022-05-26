@@ -1,0 +1,30 @@
+<nav class="color-purpul">
+    <div class="nav-wrapper ">
+      <a href="#" class="brand-logo">интернет магазин </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isHome}}
+        <li class="active"><a href="/">Главная страница</a></li>
+        {{else}}
+         <li ><a href="/">Главная страница</a></li>
+         {{/if}}
+           {{#if isCard}}
+        <li class="active"><a href="/card">карзина</a></li>
+        {{else}}
+        <li><a href="/card">Корзина</a></li>
+        {{/if}}
+        {{#if isKurs}}
+        <li class="active"><a href="/kurs">страница курсов</a></li>
+        {{else}}
+         <li><a href="/kurs">страница курсов</a></li>
+         {{/if}}
+         
+         {{#if isAdd}}
+        <li class="active"><a href="/add">добавить курс</a></li>
+        {{else}}
+        <li><a href="/add">добавить курс</a></li>
+        {{/if}}
+
+        
+      </ul>
+    </div>
+  </nav>

@@ -1,0 +1,21 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">курсы по ноде</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isHome}}
+        <li class="active"><a href="/">Главная страница</a></li>
+        {{else}}
+         <li ><a href="/">Главная страница</a></li>
+         {{/if}}
+
+          {{#if isKurs}}
+        <li class="active"><a href="/kurs">страница курсов</a></li>
+        {{else}}
+         <li><a href="/kurs">страница курсов</a></li>
+         {{/if}}
+         {{#if isAdd}}
+        <li class="active"><a href="/add">добавить курс</a></li>
+        
+      </ul>
+    </div>
+  </nav>
